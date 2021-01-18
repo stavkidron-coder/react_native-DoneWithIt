@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View, Image, SafeAreaView, TouchableOpacity, TouchableHighlight, TouchableWithoutFeedback } from 'react-native';
+import { StyleSheet, Text, View, Image, SafeAreaView, TouchableOpacity, TouchableHighlight, TouchableWithoutFeedback, Button } from 'react-native';
 
 export default function App() {
 
@@ -17,6 +17,12 @@ export default function App() {
         uri: "https://picsum.photos/200/300"
       }}/>
       </TouchableHighlight>
+
+      <Button
+        title="Click Me!"
+        onPress={() => console.log('Button Tapped')}
+        color="orange"/>
+
     </SafeAreaView>
   );
 }
