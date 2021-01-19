@@ -18,12 +18,19 @@ export default function App() {
       }}/>
       </TouchableHighlight>
 
+      {/* Regular custom alert */}
       <Button
-        title="Click Me!"
+        title="Custom Alert"
         onPress={() => Alert.alert("My Title", "My Message", [
           {text: "Yes", onPress: () => console.log("Yes")},
           {text: "No", onPress: () => console.log("No")},
         ])}
+        color="orange"/>
+      
+      {/* Prompt for text on alert */}
+      <Button
+        title="Click Me!"
+        onPress={() => Alert.prompt("My Title", "My Message", (text) => console.log(text))}
         color="orange"/>
 
     </SafeAreaView>
