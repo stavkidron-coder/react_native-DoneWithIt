@@ -11,6 +11,6 @@ import ListingDetailsScreen from './app/screens/ListingDetailsScreen.js';
 export default function App() {
   
   return (
-      <ListingDetailsScreen/>
+      <ViewImageScreen/>
   );
 }
