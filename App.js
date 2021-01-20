@@ -3,16 +3,12 @@ import WelcomeScreen from './app/screens/WelcomeScreen.js';
 import ViewImageScreen from './app/screens/ViewImageScreen.js'
 import { View } from 'react-native';
 
+import AppText from './app/components/AppText';
+import AppButton from './app/components/AppButton.js';
+
 export default function App() {
   
   return (
-      <View
-        style={{
-          flex: 1,
-          justifyContent: 'center',
-          alignItems: 'center'
-        }}>
-
-      </View>
+      <WelcomeScreen/>
   );
 }
